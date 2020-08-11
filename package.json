@@ -1,0 +1,45 @@
+{
+  "name": "@smply-gd/google-analytics",
+  "version": "0.0.1",
+  "description": "Google Analytics wrapper with event tracking and custom dimenstions and metrics.",
+  "browser": "src/SGGoogleAnalytics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smply-gd/google-analytics.git"
+  },
+  "keywords": [
+    "google analytics",
+    "analytics",
+    "javascript",
+    "js",
+    "tracking",
+    "wrapper",
+    "metrics"
+  ],
+  "author": {
+    "name": "smply.gd GmbH",
+    "email": "entwicklung@smply.gd",
+    "url": "https://smply.gd/"
+  },
+  "contributors": [
+    {
+      "name": "Marc Saleiko",
+      "email": "saleiko@smply.gd",
+      "url": "https://github.com/marcsaleiko"
+    },
+    {
+      "name": "Daniel Hoffmann",
+      "email": "hoffmann@smply.gd",
+      "url": "https://github.com/dhoffmann1979"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/smply-gd/google-analytics/issues"
+  },
+  "homepage": "https://github.com/smply-gd/google-analytics#readme",
+  "dependencies": {}
+}
