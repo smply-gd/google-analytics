@@ -1,3 +1,8 @@
+/*!
+ * SGGoogleAnalytics v0.0.1
+ * Google Analytics wrapper with event tracking and custom dimenstions and metrics.
+ * MIT License
+ */
 window.SGGoogleAnalytics = ( function()
 {
     var app = {},
