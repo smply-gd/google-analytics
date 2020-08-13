@@ -1,6 +1,6 @@
 {
   "name": "@smplygd/google-analytics",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Google Analytics wrapper with event tracking and custom dimenstions and metrics.",
   "browser": "src/SGGoogleAnalytics.js",
   "scripts": {

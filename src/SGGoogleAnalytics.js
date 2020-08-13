@@ -1,5 +1,5 @@
 /*!
- * SGGoogleAnalytics v0.0.1
+ * SGGoogleAnalytics v0.1.0
  * Google Analytics wrapper with event tracking and custom dimenstions and metrics.
  * MIT License
  */
