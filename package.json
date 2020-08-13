@@ -1,5 +1,5 @@
 {
-  "name": "@smply-gd/google-analytics",
+  "name": "@smplygd/google-analytics",
   "version": "0.0.1",
   "description": "Google Analytics wrapper with event tracking and custom dimenstions and metrics.",
   "browser": "src/SGGoogleAnalytics.js",
