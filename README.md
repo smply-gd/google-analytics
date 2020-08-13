@@ -1,4 +1,4 @@
-# smply.gd Google Analytics
+# smply.gd Google Analytics Wrapper
 Google Analytics wrapper with event tracking and custom dimenstions and metrics.
 
 If initialized the module will load and init Google Analytics automatically. It will also
@@ -8,16 +8,40 @@ outbound links and downloads tracking. It also includes the opt-out snippet and 
 link by just adding a certain class to it.
 
 ## Usage
-Include file in your script file and run `SGGoogleAnalytics.init();`. You may use the options below to 
-override the base settings.
+1. Add the Google Analytics script to the footer of your page:
+```html
+<script async data-src="https://www.google-analytics.com/analytics.js"></script>
+```
 
+2. Add this global variable to specify the Analytics property (or provide via 
+options in `init({property:'UA-XXXXXX'});` method):
+```html
+<script>window.SGGoogleAnalyticsProperty='UA-XXXXXXX';</script>
+```
+
+3. Include this script in your main script file and run `SGGoogleAnalytics.init();`. You may use the options below to 
+override the base settings. You do not need to run this in a DOM loaded event as we won't be able 
+to track performance dimensions then. The script checks whether the Analytics library is present. If not it will check
+that periodically again and only runs if the Analytics lib is available.
+
+### Track javascript errors
+If you would like to track javascript errors via an Analytics event, you need to set the 
+`trackErrors` option to `true` (which is the default). To make this work, you need to add a little
+snippet to the head of your site, so it collects all errors and this script can later forward the errors to 
+Analytics:
+
+```html
+<script>addEventListener('error', window.__e=function f(e){f.q=f.q||[];f.q.push(e)});</script>
+```
+
+This creates the global variable `window.__e` which will be populated with all js errors.
+
+### Other public methods
 Use `SGGoogleAnalytics.optout( idle );` to set the optout cookie and window var programmatically. Use the 
 `idle` parameter (bool) to prevent the display of the confirmation alert.
 
 Use `SGGoogleAnalytics.pushEvent( eventCategory, eventAction, eventLabel, eventFieldObject );` to
 send an event. All parameters except `eventCategory` are optional.
-
-Further documentation will follow.
 
 ### Options
 You may provide additional options and overrides via an object passed to the `init({})` 
