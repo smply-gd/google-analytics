@@ -7,6 +7,10 @@ and automatic javascript error, performance (server response, page load and DOM 
 outbound links and downloads tracking. It also includes the opt-out snippet and you can provide an opt-out
 link by just adding a certain class to it.
 
+## Installation
+Install via npm `npm install @smplygd/google-analytics --save`. There are no dependencies (except the 
+Analytics script of course), just plain vanilla javascript.
+
 ## Usage
 1. Add the Google Analytics script to the footer of your page:
 ```html
